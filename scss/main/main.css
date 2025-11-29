@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -117,10 +118,6 @@ nav {
 .content {
   margin: 0 4.2%;
 }
-.content p {
-  color: #E1D4C9;
-  font-weight: 200;
-}
 
 .content__wrapper {
   position: relative;
@@ -140,6 +137,7 @@ nav {
   color: #E1D4C9;
   position: relative;
   margin: 0;
+  line-height: 105%;
 }
 
 .content__wrapper__info {
@@ -158,6 +156,9 @@ nav {
   z-index: 2;
   position: relative;
   margin: 0;
+  color: #E1D4C9;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .content__wrapper__button {
@@ -288,17 +289,17 @@ nav {
   margin: 0 0 40px 0;
 }
 
-.photo__column {
+.photo__columns {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 40px;
+  max-width: 1360px;
 }
 
 .photo__column__one {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
 .photo__column__two {
@@ -309,34 +310,32 @@ nav {
 }
 
 .photo__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 66rem;
-  max-width: 66rem;
-  margin: 0 0 4rem 0;
-  overflow: hidden;
   border-radius: 20px;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  transition: all 0.5 ease;
 }
 
-.card {
-  height: auto;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 1s ease;
-}
-
-.card:hover {
-  transform: scale(0.95);
-}
-
-.high {
+.big {
   height: 59rem;
 }
 
-.low {
+.small {
   height: 43rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1.1);
+  transition: all 1S ease;
+}
+
+.card:hover {
+  transform: scale(1);
 }
 
 .mobile__app {
@@ -573,12 +572,49 @@ nav {
   pointer-events: auto;
 }
 
+@media (hover: none) {
+  .card {
+    transform: inherit !important;
+  }
+  .mobile__app__btn:hover {
+    background-color: inherit !important;
+  }
+  .mobile__app__btn:hover .bnt__title {
+    color: #403F3D !important;
+  }
+  .mobile__app__btn:hover .btn__desk {
+    color: #403F3D !important;
+  }
+  .mobile__app__btn:hover svg {
+    color: #403F3D !important;
+  }
+  .mobile__app__btn {
+    cursor: default !important;
+    transform: none !important;
+  }
+  .contact:hover {
+    cursor: default;
+  }
+  .contact:hover .border__tag,
+  .contact:hover .border__phone,
+  .contact:hover .border__clock {
+    transform: translateX(2px) translateY(4px) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  .footer__btn:hover {
+    background-color: #665F55 !important;
+  }
+  .footer__btn:hover svg {
+    color: #E1D4C9 !important;
+  }
+}
 @media (max-width: 675px) {
   h2 {
     font-size: 50px;
   }
 }
-@media (max-width: 515px) {
+@media (max-width: 655px) {
   h1 {
     font-size: 52px;
   }
@@ -586,7 +622,7 @@ nav {
     font-size: 42px;
   }
 }
-@media (max-width: 434px) {
+@media (max-width: 455px) {
   h1 {
     font-size: 42px;
   }
@@ -597,6 +633,14 @@ nav {
 @media (max-width: 415px) {
   h1 {
     font-size: 38px;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
   }
 }
 @media (max-width: 768px) {
@@ -628,54 +672,7 @@ nav {
 }
 @media (max-width: 768px) {
   .content__wrapper__info {
-    margin-left: 0;
-  }
-  .content__btn__cup {
-    justify-content: space-between;
-  }
-  .content__btn__cup .content__menu__logo {
-    display: block;
-  }
-  .content__wrapper__body {
-    justify-self: center;
-    width: 80%;
-  }
-}
-@media (max-width: 687px) {
-  h1 {
-    font-size: 55px;
-  }
-}
-@media (max-width: 544px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 534px) {
-  .content__wrapper__info {
-    height: 70%;
-  }
-}
-@media (max-width: 502px) {
-  h1 {
-    font-size: 45px;
-  }
-}
-@media (max-width: 460px) {
-  h1 {
-    font-size: 42px;
-  }
-}
-@media (max-width: 380px) {
-  .content {
-    margin: 0 16px 0 16px;
-  }
-  .content__wrapper__title {
-    max-width: 100%;
-  }
-  .content__wrapper__desk {
-    width: 316px;
-    height: 144px;
+    width: 100%;
   }
 }
 @media (max-width: 680px) {
@@ -700,103 +697,32 @@ nav {
     text-align: center;
   }
 }
-@media (max-width: 1400px) {
-  .photo__column {
+@media (max-width: 1445px) {
+  .small {
+    display: none;
+    height: 100%;
+  }
+  .photo__card {
+    width: 100%;
+  }
+  .photo__column__one {
+    width: 100%;
+  }
+  .photo__column__two {
+    width: 100%;
+  }
+  .photo__columns {
     flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .card:hover {
+    transform: none;
   }
 }
 @media (max-width: 768px) {
-  .photo__column {
+  .photo__columns {
     flex-direction: column;
-  }
-  .coffee {
-    display: none;
-  }
-  .man {
-    display: none;
-  }
-}
-@media (max-width: 705px) {
-  .photo .photo__card {
-    width: 635px;
-  }
-}
-@media (max-width: 680px) {
-  .photo .photo__card {
-    width: 610px;
-  }
-}
-@media (max-width: 660px) {
-  .photo .photo__card {
-    width: 575px;
-  }
-}
-@media (max-width: 625px) {
-  .photo .photo__card {
-    width: 550px;
-  }
-}
-@media (max-width: 600px) {
-  .photo .photo__card {
-    width: 525px;
-  }
-}
-@media (max-width: 575px) {
-  .photo .photo__card {
-    width: 500px;
-  }
-}
-@media (max-width: 550px) {
-  .photo .photo__card {
-    width: 475px;
-  }
-}
-@media (max-width: 525px) {
-  .photo .photo__card {
-    width: 450px;
-  }
-}
-@media (max-width: 500px) {
-  .photo .photo__card {
-    width: 425px;
-  }
-}
-@media (max-width: 475px) {
-  .photo .photo__card {
-    width: 400px;
-  }
-}
-@media (max-width: 450px) {
-  .photo .photo__card {
-    width: 375px;
-  }
-}
-@media (max-width: 425px) {
-  .photo .photo__card {
-    width: 350px;
-  }
-}
-@media (max-width: 400px) {
-  .photo .photo__card {
-    width: 325px;
-  }
-}
-@media (max-width: 380px) {
-  .photo {
-    margin: 0 16px;
-  }
-  .photo .photo__card {
-    width: 348px;
-  }
-}
-@media (max-width: 350px) {
-  .photo .photo__card {
-    width: 275px;
-  }
-}
-@media (max-width: 325px) {
-  .photo .photo__card {
-    width: 250px;
   }
 }
 @media (max-width: 1131px) {
