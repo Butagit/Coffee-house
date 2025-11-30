@@ -275,10 +275,6 @@ nav {
   color: #E1D4C9;
 }
 
-.arrow {
-  fill: #B0907A;
-}
-
 .photo {
   margin: 10rem 3.8% 0 3.8%;
 }
@@ -576,16 +572,22 @@ nav {
   .card {
     transform: inherit !important;
   }
-  .mobile__app__btn:hover {
+  .btn__arrow {
+    background-color: #E1D4C9 !important;
+  }
+  .btn__arrow svg {
+    color: #665F55 !important;
+  }
+  .mobile__app__btn {
     background-color: inherit !important;
   }
-  .mobile__app__btn:hover .bnt__title {
+  .mobile__app__btn .bnt__title {
     color: #403F3D !important;
   }
-  .mobile__app__btn:hover .btn__desk {
+  .mobile__app__btn .btn__desk {
     color: #403F3D !important;
   }
-  .mobile__app__btn:hover svg {
+  .mobile__app__btn svg {
     color: #403F3D !important;
   }
   .mobile__app__btn {
@@ -713,11 +715,6 @@ nav {
   }
   .photo__columns {
     flex-direction: column;
-  }
-}
-@media (max-width: 1024px) {
-  .card:hover {
-    transform: none;
   }
 }
 @media (max-width: 768px) {

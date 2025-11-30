@@ -320,9 +320,6 @@ nav {
     }
 }
 
-.arrow {
-    fill: #B0907A;
-}
 
 // PHOTO
 
@@ -652,10 +649,10 @@ nav {
   
 }
 
-// МЕДИАЗАПРОСЫ 
+// MEDIA QUERY 
 
-// Общие
 
+// HOVER
 
 
 @media (hover:none) {
@@ -663,8 +660,15 @@ nav {
         transform: inherit !important;
     }
     
+    .btn__arrow {
+        background-color:#E1D4C9 !important;
+        svg {
+            color: #665F55 !important;
+        }
+    }
+   
     
-    .mobile__app__btn:hover {
+    .mobile__app__btn {
         background-color: inherit !important;
 
         .bnt__title {
@@ -709,7 +713,7 @@ nav {
 
 
     
-
+// ОБЩИЕ
 
 
 
@@ -877,12 +881,6 @@ nav {
 
     .photo__columns {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 1024px) {
-    .card:hover {
-        transform: none;
     }
 }
 
