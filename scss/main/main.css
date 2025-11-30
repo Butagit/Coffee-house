@@ -200,6 +200,10 @@ nav {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
+  pointer-events: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
 }
 
 .slider {

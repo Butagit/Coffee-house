@@ -226,6 +226,9 @@ nav {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 
