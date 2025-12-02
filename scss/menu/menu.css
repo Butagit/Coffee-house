@@ -214,7 +214,27 @@ nav {
   justify-content: space-around;
 }
 
-.card {
+.card__coffee {
+  border-radius: 4rem;
+  height: 50rem;
+  width: 31rem;
+  border: 1px solid #C1B6AD;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.card__tea {
+  border-radius: 4rem;
+  height: 50rem;
+  width: 31rem;
+  border: 1px solid #C1B6AD;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.card__dessert {
   border-radius: 4rem;
   height: 50rem;
   width: 31rem;
