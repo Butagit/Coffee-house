@@ -4,7 +4,6 @@ const btnDessert = document.querySelector(".dessert");
 const cardsCoffee = document.querySelectorAll(".card__coffee");
 const cardsTeas = document.querySelectorAll(".card__tea");
 const cardsDesserts = document.querySelectorAll(".card__dessert");
-const btnActive = document.querySelector(".btn--active");
 
 btnCoffee.addEventListener('click', (e) => {
     cardsCoffee.forEach((i) => {
@@ -19,7 +18,10 @@ btnCoffee.addEventListener('click', (e) => {
         i.style.display = "none"
     })
 
-    btnActive.classList.add();
+    btnCoffee.classList.add("btn--active");
+    btnTea.classList.remove("btn--active");
+    btnDessert.classList.remove("btn--active");
+    
 })
 
 btnTea.addEventListener('click', (e) => {
@@ -35,7 +37,10 @@ btnTea.addEventListener('click', (e) => {
         i.style.display = "none"
     })
 
-    btnActive.classList.add();
+    btnCoffee.classList.remove("btn--active");
+    btnTea.classList.add("btn--active");
+    btnDessert.classList.remove("btn--active");
+
 
 })
 
@@ -52,7 +57,14 @@ btnDessert.addEventListener('click', (e) => {
         i.style.display = "block"
     })
 
-    btnActive.classList.add();
+    btnCoffee.classList.remove("btn--active");
+    btnTea.classList.remove("btn--active");
+    btnDessert.classList.add("btn--active");
 
 })
+
+document.querySelector('.logo').addEventListener('click', () => {
+    location.href = 'index.html';
+
+} )
 

@@ -96,11 +96,20 @@ nav {
 
 .coffee__menu {
   position: relative;
-  display: inline-block;
 
   .menu__btn {
     padding: 1rem 2rem;
   }
+
+  p {
+    color: #403F3D;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    
+  }
+
+  cursor: pointer;
 }
 
 .coffee__menu__phone {
@@ -111,7 +120,7 @@ nav {
 
 .coffee__menu__logo {
   position: absolute;
-  transform: translateX(-45px) translateY(-14px); 
+  transform: translateX(35px) translateY(-42px); 
   opacity: 0;
   pointer-events: none; 
   padding: 1rem;
@@ -120,7 +129,7 @@ nav {
 
 .coffee__menu:hover .coffee__menu__logo{
   opacity: 1;
-  transform: translateX(-25px) translateY(-11px); 
+  transform: translateX(54px) translateY(-42px); 
   pointer-events: auto; 
 }
 
