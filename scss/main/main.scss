@@ -29,13 +29,13 @@ span {
         color: #B0907A;
 }
 
-p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #403F3D;
-    margin: 0;
 
-}
+p {
+    color: #403F3D;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;    
+    }
 
 h1 {
     font-weight: 600;
@@ -65,9 +65,7 @@ a {
     transition: all 0.5s ease;
 }
 
-a:hover {
-    opacity: 0.8;
-}
+
 
 
 
@@ -92,6 +90,23 @@ margin: 2rem 4.2%;
 nav {
     display: flex;
     gap: 4rem;
+
+    a:hover {
+        opacity: 0.8;
+    }
+    
+}
+
+.navigation {
+    cursor: pointer;
+    transition: all 1s ease;
+
+    
+}
+
+
+.navigation:hover {
+    opacity: 0.7;
 }
 
 .coffee__menu {
@@ -106,7 +121,6 @@ nav {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    
   }
 
   cursor: pointer;
@@ -120,7 +134,7 @@ nav {
 
 .coffee__menu__logo {
   position: absolute;
-  transform: translateX(35px) translateY(-42px); 
+  transform: translateX(35px) translateY(-57px); 
   opacity: 0;
   pointer-events: none; 
   padding: 1rem;
@@ -129,8 +143,9 @@ nav {
 
 .coffee__menu:hover .coffee__menu__logo{
   opacity: 1;
-  transform: translateX(54px) translateY(-42px); 
+  transform: translateX(54px) translateY(-57px); 
   pointer-events: auto; 
+
 }
 
 .menu__btn--active {
@@ -147,6 +162,7 @@ nav {
 .content {
     margin: 0 4.2%;
     
+     
 }
 
 
@@ -190,10 +206,11 @@ nav {
 .content__wrapper__desk {
     z-index: 2;
     position: relative;
-    margin: 0;
+    line-height: 150%;
     color: #E1D4C9;
     font-weight: 400;
-    line-height: 150%;
+    margin: 0;
+    font-size: 16px;
 
 }
 
@@ -251,6 +268,12 @@ nav {
 .slider {
     margin: 10rem 4.5% 0 4.5%;
     
+    p {
+        font-weight: 400;
+        color: #403F3D;
+        font-size: 16px;
+        margin: 0;
+    }
     
 }
 
@@ -400,10 +423,18 @@ nav {
 
 .mobile__app {
     margin: 10rem 3.9%;
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    p {
+        font-weight: 400;
+        color: #403F3D;
+        font-size: 16px;
+        margin: 0;
     }
 }
 
@@ -604,13 +635,13 @@ nav {
 
 
 .border {
-    border: 2px solid #E1D4C9;
+    border: 1px solid #E1D4C9;
     pointer-events: none;
 }
 
 .border__tag {
     position: absolute;
-    width: 17rem;
+    width: 17.3rem;
     transform: translateX(2px) translateY(4px);
     opacity: 0;
     transition: all 0.5s ease;
@@ -628,7 +659,7 @@ nav {
 .border__phone {
     position: absolute;
     transform: translateX(2px) translateY(4px);
-    width: 16.3rem;
+    width: 16.4rem;
     opacity: 0;
     transition: all 0.5s ease;
 
@@ -646,7 +677,7 @@ nav {
 .border__clock {
     position: absolute;
     transform: translateX(2px) translateY(4px);
-    width: 25.2rem;
+    width: 25.4rem;
     opacity: 0;
     transition: all 0.5s ease;
 
@@ -679,6 +710,11 @@ nav {
         }
     }
    
+    nav {
+        a:hover {
+            opacity: 1;
+        }
+    }
     
     .mobile__app__btn {
         background-color: inherit !important;

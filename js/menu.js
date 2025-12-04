@@ -5,66 +5,64 @@ const cardsCoffee = document.querySelectorAll(".card__coffee");
 const cardsTeas = document.querySelectorAll(".card__tea");
 const cardsDesserts = document.querySelectorAll(".card__dessert");
 
-btnCoffee.addEventListener('click', (e) => {
-    cardsCoffee.forEach((i) => {
-        i.style.display = "block"
-    })
+window.addEventListener("DOMContentLoaded", () => {
 
-    cardsTeas.forEach((i) => {
-        i.style.display = "none"
+    btnCoffee.addEventListener('click', () => {
+        cardsCoffee.forEach((i) => {
+            i.style.display = "block"
+        })
+    
+        cardsTeas.forEach((i) => {
+            i.style.display = "none"
+        })
+    
+        cardsDesserts.forEach((i) => {
+            i.style.display = "none"
+        })
+    
+        btnCoffee.classList.add("btn--active");
+        btnTea.classList.remove("btn--active");
+        btnDessert.classList.remove("btn--active");
+        
     })
-
-    cardsDesserts.forEach((i) => {
-        i.style.display = "none"
+    
+    btnTea.addEventListener('click', () => {
+        cardsCoffee.forEach((i) => {
+            i.style.display = "none"
+        })
+    
+        cardsTeas.forEach((i) => {
+            i.style.display = "block"
+        })
+    
+        cardsDesserts.forEach((i) => {
+            i.style.display = "none"
+        })
+    
+        btnCoffee.classList.remove("btn--active");
+        btnTea.classList.add("btn--active");
+        btnDessert.classList.remove("btn--active");
+    
+    
     })
-
-    btnCoffee.classList.add("btn--active");
-    btnTea.classList.remove("btn--active");
-    btnDessert.classList.remove("btn--active");
+    
+    btnDessert.addEventListener('click', () => {
+        cardsCoffee.forEach((i) => {
+            i.style.display = "none"
+        })
+    
+        cardsTeas.forEach((i) => {
+            i.style.display = "none"
+        })
+    
+        cardsDesserts.forEach((i) => {
+            i.style.display = "block"
+        })
+    
+        btnCoffee.classList.remove("btn--active");
+        btnTea.classList.remove("btn--active");
+        btnDessert.classList.add("btn--active");
+    
+    })
     
 })
-
-btnTea.addEventListener('click', (e) => {
-    cardsCoffee.forEach((i) => {
-        i.style.display = "none"
-    })
-
-    cardsTeas.forEach((i) => {
-        i.style.display = "block"
-    })
-
-    cardsDesserts.forEach((i) => {
-        i.style.display = "none"
-    })
-
-    btnCoffee.classList.remove("btn--active");
-    btnTea.classList.add("btn--active");
-    btnDessert.classList.remove("btn--active");
-
-
-})
-
-btnDessert.addEventListener('click', (e) => {
-    cardsCoffee.forEach((i) => {
-        i.style.display = "none"
-    })
-
-    cardsTeas.forEach((i) => {
-        i.style.display = "none"
-    })
-
-    cardsDesserts.forEach((i) => {
-        i.style.display = "block"
-    })
-
-    btnCoffee.classList.remove("btn--active");
-    btnTea.classList.remove("btn--active");
-    btnDessert.classList.add("btn--active");
-
-})
-
-document.querySelector('.logo').addEventListener('click', () => {
-    location.href = 'index.html';
-
-} )
-

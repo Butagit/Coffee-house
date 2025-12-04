@@ -69,6 +69,21 @@ nav {
   gap: 4rem;
 }
 
+.navigation {
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.navigation p {
+  color: #403F3D;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navigation:hover {
+  opacity: 0.7;
+}
+
 .coffee__menu {
   position: relative;
   display: inline-block;
@@ -221,7 +236,6 @@ nav {
   border: 1px solid #C1B6AD;
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .card__tea {
@@ -241,6 +255,7 @@ nav {
   border: 1px solid #C1B6AD;
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .card__photo {
