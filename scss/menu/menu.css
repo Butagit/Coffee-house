@@ -286,6 +286,207 @@ nav {
   padding: 2rem;
 }
 
+.modal--btn--active {
+  background-color: #665F55;
+}
+.modal--btn--active .title {
+  background-color: #E1D4C9;
+  color: #403F3D;
+}
+.modal--btn--active .desk {
+  color: #E1D4C9;
+}
+
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(64, 63, 61, 0.8);
+  z-index: 10;
+  display: none;
+}
+
+.modal__coffee__one {
+  justify-content: space-between;
+  align-items: center;
+  width: 80rem;
+  height: 50rem;
+  padding: 1.6rem;
+  background-color: #E1D4C9;
+  border-radius: 4rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+}
+
+.modal__photo {
+  width: 31rem;
+  height: 31rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.modal__info {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 46rem;
+}
+
+.modal__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.modal__desk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9rem;
+}
+
+.modal__size {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 7.8rem;
+  width: 100%;
+}
+
+.btns__size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__size {
+  box-sizing: border-box;
+  width: 12rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #C1B6AD;
+  border-radius: 10rem;
+  padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+}
+.btn__size p {
+  font-weight: 600;
+}
+
+.btn__size:nth-child(2) {
+  margin: 0 0.8rem 0 0.8rem;
+}
+
+.title {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  background-color: #C1B6AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__additives {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 7.8rem;
+  width: 100%;
+}
+
+.btns__additives {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__additive {
+  box-sizing: border-box;
+  width: 11rem;
+  height: 4.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #C1B6AD;
+  border-radius: 10rem;
+  padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+}
+.btn__additive p {
+  font-weight: 600;
+}
+
+.btn__additive:nth-child(2) {
+  width: 14rem;
+  margin: 0 0.8rem 0 0.8rem;
+}
+
+.additive {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10rem;
+  background-color: #C1B6AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.modal__warning {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5rem;
+  width: 100%;
+}
+
+.warning__border {
+  border: 1px solid #C1B6AD;
+  width: 100%;
+}
+
+.warning__desk {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.warning__desk h4 {
+  font-size: 1rem;
+}
+
+.warning__photo {
+  height: 13px;
+  width: 13px;
+  margin-right: 0.8rem;
+}
+
+.modal__btn {
+  width: 100%;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #665F55;
+  border-radius: 10rem;
+}
+
 .footer {
   margin: 0 3.8% 4rem 3.8%;
 }
@@ -390,13 +591,13 @@ nav {
 }
 
 .border {
-  border: 2px solid #E1D4C9;
+  border: 1px solid #E1D4C9;
   pointer-events: none;
 }
 
 .border__tag {
   position: absolute;
-  width: 17rem;
+  width: 17.3rem;
   transform: translateX(2px) translateY(4px);
   opacity: 0;
   transition: all 0.5s ease;
@@ -411,7 +612,7 @@ nav {
 .border__phone {
   position: absolute;
   transform: translateX(2px) translateY(4px);
-  width: 16.3rem;
+  width: 16.7rem;
   opacity: 0;
   transition: all 0.5s ease;
 }
@@ -425,7 +626,7 @@ nav {
 .border__clock {
   position: absolute;
   transform: translateX(2px) translateY(4px);
-  width: 25.2rem;
+  width: 25.9rem;
   opacity: 0;
   transition: all 0.5s ease;
 }

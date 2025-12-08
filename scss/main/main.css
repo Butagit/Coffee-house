@@ -574,7 +574,7 @@ nav a:hover {
 .border__phone {
   position: absolute;
   transform: translateX(2px) translateY(4px);
-  width: 16.4rem;
+  width: 16.7rem;
   opacity: 0;
   transition: all 0.5s ease;
 }
@@ -588,7 +588,7 @@ nav a:hover {
 .border__clock {
   position: absolute;
   transform: translateX(2px) translateY(4px);
-  width: 25.4rem;
+  width: 25.9rem;
   opacity: 0;
   transition: all 0.5s ease;
 }
