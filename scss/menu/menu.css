@@ -52,7 +52,7 @@ a {
 }
 
 .burger__menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   align-items: center;

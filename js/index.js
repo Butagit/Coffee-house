@@ -3,10 +3,12 @@ const burgerMenu = document.querySelector('.burger__menu');
 const nav = document.querySelectorAll('.navigation');
 
 burgerBtn.addEventListener('click', () => {
+    burgerMenu.style.display = 'flex'
     burgerMenu.classList.toggle('burger--active');
     if (burgerMenu.classList.contains('burger--active')) {
         document.body.style.overflow = 'hidden';
     } else {
+        burgerMenu.style.display = 'none'
         document.body.style.overflow = '';
     }
 })

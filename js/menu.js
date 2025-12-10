@@ -1,4 +1,4 @@
-// window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
 
     const modalOverlay = document.querySelector(".modal__overlay");
     const modal = document.querySelector(".modal__coffee__one");
@@ -176,10 +176,12 @@
     const nav = document.querySelectorAll('.navigation');
 
     burgerBtn.addEventListener('click', () => {
+        burgerMenu.style.display = 'flex';
         burgerMenu.classList.toggle('burger--active');
         if (burgerMenu.classList.contains('burger--active')) {
             document.body.style.overflow = 'hidden';
         } else {
+            burgerMenu.style.display = 'none';
             document.body.style.overflow = '';
         }
     })
@@ -192,4 +194,4 @@
     
 
     
-// })
+})
