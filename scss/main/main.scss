@@ -11,6 +11,7 @@ body {
     background-color: #E1D4C9;
     margin: 0;
     font-family: Inter;
+    position: relative;
 
 }
 
@@ -49,6 +50,7 @@ h2 {
     margin: 0;
 }
 
+
 h4 {
     font-size: 24px;
     font-weight: 600;
@@ -65,9 +67,59 @@ a {
     transition: all 0.5s ease;
 }
 
+// BURGER 
 
+.burger__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    background-color: #E1D4C9;
+    top: 6rem;
+    left: 100%;
+    z-index: 100;
+    width: 100%;
+    height: 92rem;
+    padding-top: 6rem;
+    transition: all 0.5s ease;
+}
 
+.burger--active {
+    left: 0;
+}
 
+.nav {
+    height: 34rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    gap: 6rem;
+    
+    a {
+        font-size: 32px;
+    }
+
+}
+
+.btn__burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 32px;
+    }
+}
+
+.burger__cup {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1.6rem;
+    transform: translateY(-10%);
+}
 
 
 // ШАПКА
@@ -129,7 +181,10 @@ nav {
 .coffee__menu__phone {
     display: none;
     color: #403F3D;
+    transition: all 0.5s ease;
 }
+
+
 
 
 .coffee__menu__logo {
@@ -833,6 +888,22 @@ nav {
             justify-content: center;
             align-items: center;
         }
+
+        // .burger__menu {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     position: absolute;
+        //     // background-color: #E1D4C9;
+        //     background-color: black;
+        //     transform: translate(-50%, -39%);
+        //     top: 50%;
+        //     left: 50%;
+        //     z-index: 100;
+        //     width: 50%;
+        //     height: 50%;
+        // }
     }
 }
 
