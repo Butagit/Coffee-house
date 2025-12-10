@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+// window.addEventListener("DOMContentLoaded", () => {
 
     const modalOverlay = document.querySelector(".modal__overlay");
     const modal = document.querySelector(".modal__coffee__one");
@@ -169,22 +169,27 @@ window.addEventListener("DOMContentLoaded", () => {
         additiveThree.classList.add('modal--btn--active');
     })
     
+    
+
     const burgerBtn = document.querySelector('.coffee__menu__phone');
     const burgerMenu = document.querySelector('.burger__menu');
     const nav = document.querySelectorAll('.navigation');
 
     burgerBtn.addEventListener('click', () => {
-        burgerMenu.style.display = 'flex';
         burgerMenu.classList.toggle('burger--active');
+        if (burgerMenu.classList.contains('burger--active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
     })
 
     nav.forEach(btn => {
         btn.addEventListener('click', () => {
-            burgerMenu.style.display = 'none';
             burgerMenu.classList.toggle('burger--active');
         })
     })
     
 
     
-})
+// })
