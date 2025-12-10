@@ -80,7 +80,7 @@ a {
     left: 100%;
     z-index: 100;
     width: 100%;
-    height: 92rem;
+    height: 100vh;
     padding-top: 6rem;
     transition: all 0.5s ease;
 }
@@ -112,13 +112,16 @@ a {
     p {
         font-size: 32px;
     }
+    
 }
 
 .burger__cup {
+    left: 0;
+    top: 0;
     width: 4rem;
     height: 4rem;
     margin-left: 1.6rem;
-    transform: translateY(-10%);
+    transform: translate(0, -10%);
 }
 
 
@@ -888,22 +891,6 @@ nav {
             justify-content: center;
             align-items: center;
         }
-
-        // .burger__menu {
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: space-between;
-        //     align-items: center;
-        //     position: absolute;
-        //     // background-color: #E1D4C9;
-        //     background-color: black;
-        //     transform: translate(-50%, -39%);
-        //     top: 50%;
-        //     left: 50%;
-        //     z-index: 100;
-        //     width: 50%;
-        //     height: 50%;
-        // }
     }
 }
 
