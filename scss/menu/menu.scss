@@ -57,6 +57,14 @@ a {
     transition: all 0.5s ease;
 }
 
+// BURGER
+
+.burger__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 // HEADER
