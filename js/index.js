@@ -9,13 +9,14 @@ burgerBtn.addEventListener('click', () => {
         document.body.style.overflow = 'hidden';
     } else {
         burgerMenu.style.display = 'none'
-        document.body.style.overflow = '';
     }
 })
 
 nav.forEach(btn => {
     btn.addEventListener('click', () => {
         burgerMenu.classList.toggle('burger--active');
+        document.body.style.overflow = '';
+
     })
 })
 
